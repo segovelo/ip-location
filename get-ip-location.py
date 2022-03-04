@@ -22,9 +22,9 @@ def get_location():
         "region": response.get("region"),
         "country": response.get("country_name"),
         "capital": response.get("country_capital"),
-        "time-zone": response("timezone"),
-        "utc-offset": response("utc_offset")
-    }
+        "time-zone": response.get("timezone"),
+        "currency-name": response.get("currency_name")
+     }
     return location_data
 
 
