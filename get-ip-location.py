@@ -20,7 +20,10 @@ def get_location():
         "ip": ip_address,
         "city": response.get("city"),
         "region": response.get("region"),
-        "country": response.get("country_name")
+        "country": response.get("country_name"),
+        "capital": response.get("country_capital"),
+        "time-zone": response("timezone"),
+        "utc-offset": response("utc_offset")
     }
     return location_data
 
